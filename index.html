@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Codificador e Decodificador de texto</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/favicon.png"> 
+    </head>
+      
+    <body>
+        <header>
+            <img class="logo" src="img/logo-alura.svg" alt="logo da alura">
+        </header>
+        <div class="main">       
+                <div class="cripto">
+                    <textarea id="txt-entrada" placeholder="Digite seu texto..."></textarea>
+                    <p style="color: #0A3871;">Apenas letras minúsculas e sem acento.</p>
+                    <div class="buttons">
+                        <button class="button btn-1">Criptografar</button>
+                        <button class="button btn-2">Descriptografar</button>
+                    </div>
+                </div>           
+        </div>     
+        <div id="descripto">
+            <img class="icone" id="icone"src="img/lupa.svg" alt="imagem procurando com lupa">
+            <h2 id="none">Nenhuma mensagem encontrada</h2>          
+            <textarea id="txt-saida" placeholder="Texto Criptografado ou Descriptografado "></textarea>   
+            <h3 id="msg"></h3>
+            <div id="copy"></div>
+        </div>   
+        <script src="js/script.js"></script>
+    </body>
+</html>
+
+

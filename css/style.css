@@ -1,0 +1,322 @@
+body {
+    background-color: #F3F5FC;
+    display: flex;
+    height: 90vh;
+    width: 90vw;
+    min-height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo {
+    margin: 30px 0 0 20px ;
+}
+.logo:hover {
+    animation: expandir 1s;
+}
+
+.title {
+    position: absolute;
+    top: 40px;
+    left: 304px;
+    font-size: 25px;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+textarea {
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 100;  
+    border: none;
+    background-color: #F3F5FC;
+    width: 70%;
+    height: 70%;
+    font-size: 32px;
+    color: #0A3871;
+    outline: none;
+    resize: none;
+}
+
+.txt-entrada {
+    align-items: center;
+    vertical-align: top;  
+}
+
+#txt-entrada::placeholder {
+    color: #0A3871;
+}
+
+#txt-saida {
+    background-color: white;
+    margin: 30px 20px 10px 20px;
+    color: #0A3871;
+    font-size: 20px;
+    text-align: left;
+    color: #495057;
+    text-transform:lowercase;
+}
+
+#txt-saida::placeholder {
+    color: #0A3871;
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+}
+
+h3 {
+    color: #0A3871;
+    font-size: 18px;
+  }
+  /* criptografar */
+.cripto {
+    box-sizing: border-box;
+    width: 50vw;
+    height: 80vh;
+    margin: 100px 0 0 10px;
+    justify-content: center;
+    padding: 10px 80px;
+}
+
+.main .cripto .line {
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.main .cripto .info .line {
+    font-size: 20px;
+    border-right: 3px solid #072B61;;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    border-radius: 18px;
+    width: 230px;
+    height: 45px;
+    border: #0A3871 solid 2px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
+    letter-spacing: 0.05em;
+}
+
+.btn-1 {
+    background-color: #0a3871;
+    color: white;
+}
+
+.btn-1:hover {
+    background-color:#072B61;
+    color: white;
+}
+
+.btn-2 {
+    color: #0A3871;
+    background: #EFF1FA;
+}
+
+.btn-2:hover {
+    background-color: #0a3871;
+    color: white;
+}
+
+.btn-3 {
+    background-color: white;
+    color: #0A3871;
+}
+
+.btn-:hover {
+    background-color: #0a3871;
+    color: white;
+}
+
+/* descriptografar */
+#descripto {
+    background-color: white;
+    border-radius: 32px;
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:20px;
+    box-sizing: border-box;
+    margin: 10px 0 0 30px;
+    box-shadow: 0px 24px 32px -8px #00000014; 
+}
+
+.icone {
+    width: 450px;
+    height: 300px;
+}
+
+#msg{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#none {
+    color: #343A40;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) /*Tablet*/ {
+    body {
+        flex-direction: column;
+    }
+    
+    .logo {
+        margin: 40px 0 80px 30px;
+    }
+    .logo:hover {
+        margin: 30px 0 0 20px ;
+        animation: expandir 1s;
+    }    
+    .icone {
+      width: 100%;
+    }
+
+    .title {
+        left: 230px;
+        font-size: 33px;
+    }
+
+    .cripto {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .main {
+        width: 90vw;
+        margin: 40px 10px 10px 40px;
+    }
+
+    .main .cripto .line {
+        font-size: 30px;
+    }
+    .info {
+        margin: 0 0 10px 0;
+    }
+
+    .button {
+        width: 45%;
+    }
+
+    #descripto {
+        width: 92vw;
+        height: 92vw;
+        margin-bottom: 15px;
+    }
+
+    #none {
+        font-size: 25px;
+        margin: 20px 0 20px;
+    }
+    #txt-saida {
+        font-size: 20px;
+        text-align: center;
+        height: 20vh;
+    }
+    #txt-saida::placeholder {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .btn-3 {
+        margin-top: 10px;
+        width: 85vw;
+    }
+
+}
+
+@media (max-width: 375px) /*Celular*/ {
+    
+    body {
+        flex-direction: column;
+    }
+    .buttons {
+        flex-direction: column;
+        margin: 10px 0 10px 0;
+        height: 125px;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .icone {
+        width: 50%;
+        margin: -40px;
+
+    }
+    .logo {
+        margin: 30px 0 90px 0;
+    }
+
+    .logo:hover {
+        margin: 30px 0 0 20px ;
+        animation: expandir 1s;
+    }
+    
+    .title {
+        left: 115px;
+        top: 35px;
+        font-size: 25px;
+    }
+    .main {
+        margin: -40px 20px 60px 20px
+    }
+    .main .cripto .line {
+        font-size: 25px;
+    }
+    .cripto {
+        margin: 45px 27px;
+        padding: 0px;
+        width: 100%;
+    }
+    #descripto {
+        margin: 30px 53px 20px;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+
+    .btn-3 {
+        width: 85vw;
+    }
+
+    #none {
+        font-size: 20px;
+        margin: 0px 0 0px;
+    }
+
+    #txt-saida {
+        font-size: 16px;
+        height: 100px;
+        margin: 0 0 15px;
+    }
+
+    #txt-saida::placeholder {
+        font-size: 18px;
+    }
+}
+
+
+
+
